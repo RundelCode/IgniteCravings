@@ -1,28 +1,28 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { CoreModule } from './modules/core/core.module';
+import { SharedModule } from './modules/shared/shared.module';
+import { MenuModule } from './modules/menu/menu.module';
+import { CategoryModule } from './modules/category/category.module';
+import { ProductModule } from './modules/product/product.module';
 import { AppRoutingModule } from './app-routing.module';
+
+
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/home/home.component';
-import { SplashComponent } from './components/splash/splash.component';
-import { SingleProductComponent } from './components/single-product/single-product.component';
-import { QRScreenComponent } from './components/qrscreen/qrscreen.component';
-import { SliderComponent } from './components/slider/slider.component';
-import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent,
-    SplashComponent,
-    SingleProductComponent,
-    QRScreenComponent,
-    SliderComponent,
-    NavBarComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CoreModule,
+    SharedModule,
+    MenuModule,
+    CategoryModule,
+    ProductModule
   ],
   providers: [],
   bootstrap: [AppComponent]
