@@ -11,6 +11,7 @@ export class ProductCardComponent implements OnInit {
     image: "../../../../assets/cookies/Nocciola Cookie FOTO.png",
   }
   productList: any;
+  productList1: any;
 
   constructor(private apiService: APIService){}
 
@@ -19,7 +20,8 @@ export class ProductCardComponent implements OnInit {
   }
 
   test(){
-    alert("Redirección")
+    this.apiService.getProducts();
+  
   }
 
 }

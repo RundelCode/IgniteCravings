@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+
+  actual = "home";
+  
   allCategories = {
     categoryId: "1",
     categoryName: "Name",
