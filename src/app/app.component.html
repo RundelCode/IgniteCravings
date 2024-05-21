@@ -1,1 +1,4 @@
-<router-outlet></router-outlet>
+<div *ngIf="splashService.loading" class="splash-screen">
+  <app-load-page></app-load-page>
+</div>
+<router-outlet *ngIf="!splashService.loading"></router-outlet>
