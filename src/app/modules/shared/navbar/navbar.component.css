@@ -1,0 +1,29 @@
+.navbar{
+    width: 100vw;
+    height: 8vh;
+    background-color: #1E1E1E;
+    position: fixed;
+    bottom: -1px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.categories{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    overflow-y: scroll;
+}
+
+.category{
+    min-width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
