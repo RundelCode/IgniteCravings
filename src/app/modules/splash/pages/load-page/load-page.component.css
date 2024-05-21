@@ -1,0 +1,28 @@
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.logo{
+    margin-bottom: 2rem;
+}
+
+.logo img{
+    width: 20rem;
+}
+
+.description{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #333;
+}
+
+.description img{
+    width: 8rem;
+    margin-left: 1rem;
+}
+
+
