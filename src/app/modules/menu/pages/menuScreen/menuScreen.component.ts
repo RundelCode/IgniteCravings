@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 
 
 @Component({
@@ -12,13 +12,23 @@ export class menuScreenComponent {
   
   constructor(private http: HttpClient) { }
 
-  getproducts(){
-    this.http.get<any>(this.APIURL+"productos").subscribe(
-      response=>{
-        console.log(response)
+  getProducts() {
+    console.log("Iniciando solicitud de productos...");
+    this.http.get<any>(this.APIURL + "productos").subscribe(
+      response => {
+        console.log("Respuesta recibida:", response);
+        // Aquí puedes realizar operaciones con los datos recibidos
+      },
+      (error: HttpErrorResponse) => {
+        if (error.error instanceof ErrorEvent) {
+          // Error del cliente
+          console.error("Error del cliente:", error.error.message);
+        } else {
+          // Error del servidor
+          console.error("Error del servidor:", error.status, error.statusText);
+        }
       }
-    )
-
+    );
   }
 
 }
