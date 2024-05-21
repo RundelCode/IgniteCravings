@@ -7,13 +7,14 @@ import { CategoryModule } from './modules/category/category.module';
 import { ProductModule } from './modules/product/product.module';
 import { AppRoutingModule } from './app-routing.module';
 
-
 import { AppComponent } from './app.component';
+
+
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -22,7 +23,7 @@ import { AppComponent } from './app.component';
     SharedModule,
     MenuModule,
     CategoryModule,
-    ProductModule
+    ProductModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
