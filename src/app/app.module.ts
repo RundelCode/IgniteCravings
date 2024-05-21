@@ -6,7 +6,7 @@ import { MenuModule } from './modules/menu/menu.module';
 import { CategoryModule } from './modules/category/category.module';
 import { ProductModule } from './modules/product/product.module';
 import { AppRoutingModule } from './app-routing.module';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 
 
@@ -19,6 +19,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     CoreModule,
     SharedModule,
     MenuModule,
