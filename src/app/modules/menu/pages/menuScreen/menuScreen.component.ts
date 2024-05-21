@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./menuScreen.component.css']
 })
 export class menuScreenComponent {
-  restaurantImage: string = "../../../../../assets/cookies/Nocciola Cookie FOTO.png"
+  restaurantImage: string = "s3://ignitecravings-elbuensabor-colombia/Entrantes/664bc8c6812cff3f2c837014.mov"
   restaurantName: string = "Nocciola Cookie"
   
   constructor() { }
