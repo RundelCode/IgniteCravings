@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { menuScreenComponent } from './pages/menuScreen/menuScreen.component';
 
 const routes: Routes = [
-  { path: '', component: menuScreenComponent },
+  { path: '', component: menuScreenComponent},
 ];
 
 @NgModule({
