@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { APIService } from '../../core/services/api.service';
+import { APIService } from '../../../core/services/api.service';
 
 @Component({
-  selector: 'app-product-card',
+  selector: 'shared-product-card',
   templateUrl: './product-card.component.html',
   styleUrls: ['./product-card.component.css']
 })
@@ -11,7 +11,6 @@ export class ProductCardComponent implements OnInit {
     image: "../../../../assets/cookies/Nocciola Cookie FOTO.png",
   }
   productList: any;
-  productList1: any;
 
   constructor(private apiService: APIService){}
 
@@ -20,8 +19,8 @@ export class ProductCardComponent implements OnInit {
   }
 
   test(){
-    this.apiService.getProducts();
-  
+    alert("Redirección")
   }
 
 }
+

@@ -1,0 +1,17 @@
+<div class="category-screen">
+  <div class="category-header">
+    <h1 class="title">Galletas</h1>
+  </div>
+  <div class="Categorie">
+    <div class="products">
+        <div class="productCard" (click)="test()" *ngFor="let product of productList">
+            <img src="{{producto.image}}" alt="" class="productImage">
+            <div class="productText">
+                <p class="productTitle">{{product.nombre}}</p>
+                <p class="productPrice">${{product.precio}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+  <shared-navbar></shared-navbar>
+</div>

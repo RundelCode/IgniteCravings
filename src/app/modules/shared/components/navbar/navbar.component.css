@@ -27,16 +27,3 @@
     justify-content: center;
     align-items: center;
 }
-
-.icon {
-    width: 32px;
-    height: 32px;
-    mask-size: contain;
-    mask-repeat: no-repeat;
-    mask-position: center;
-    background-color: #8A8A8A;
-}
-
-.actual{
-    background-color: #FFFFFF !important;
-}

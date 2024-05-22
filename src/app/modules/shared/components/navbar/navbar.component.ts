@@ -2,14 +2,11 @@ import { Component } from '@angular/core';
 
 
 @Component({
-  selector: 'app-navbar',
+  selector: 'shared-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-
-  actual = "home";
-  
   allCategories = {
     categoryId: "1",
     categoryName: "Name",
@@ -40,8 +37,8 @@ export class NavbarComponent {
       categoryId: "1",
       categoryName: "name",
       categoryIcon: "../../../../assets/Icons/bbq.svg"
-    },   
-     
+    },
+
   ]
 
 }
