@@ -57,6 +57,7 @@ export class NavbarComponent implements OnInit {
   }
 
   navigateToCategory(categoryName: string): void {
-    this.router.navigate(['/slider'])
+    this.NavbarService.currentPage = categoryName;
+    this.router.navigate(['/slider']);
   }
 }

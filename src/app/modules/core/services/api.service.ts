@@ -159,7 +159,7 @@ export class APIService {
   }
   getProducts() {
     console.log("Iniciando solicitud de productos...");
-    this.http.get<any>(this.APIURL + "productos").subscribe(
+    this.http.get<any>(this.APIURL + "categorias").subscribe(
       response => {
         console.log("Respuesta recibida:", response);
         return response;
@@ -172,6 +172,23 @@ export class APIService {
         }
       }
     );
+  }
+
+  getCategoriesTest(){
+    const categories = [
+      {
+        id: "1",
+        nombre: "Entrantes",
+        descripcion: "Deliciosos entrantes para abrir el apetito",
+        imagen: "",
+        restauranteId: "",
+        indice: "",
+        estaActivo: true,
+        __v : 0,
+        createdAt: "",
+        updatedAt: "",
+      },
+    ]
   }
 
 }

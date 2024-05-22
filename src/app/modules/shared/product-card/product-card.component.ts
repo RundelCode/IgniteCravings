@@ -21,7 +21,6 @@ export class ProductCardComponent implements OnInit {
 
   test(){
     this.apiService.getProducts();
-  
   }
 
 }
