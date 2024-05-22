@@ -1,7 +1,9 @@
-<div class="navbar">
+<div class="navbar" >
     <div class="categories">
         <div class="category" *ngFor="let category of categories">
-            <a href="" class="categoryLink"><img src="{{category.categoryIcon}}" alt="{{category.categoryName}}" class="categoryIcon"></a>
+            <a class="categoryLink" (click)="navigateToCategory(category.categoryName)">
+                <div class="icon" style="mask-image: url('{{category.categoryIcon}}');" [style.backgroundColor]="isActive(category.categoryName) ? '#FFFFFF' : '#8A8A8A'"></div>
+            </a>
         </div>
     </div>
 </div>
