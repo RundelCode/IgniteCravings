@@ -159,7 +159,7 @@ export class APIService {
   }
   getProducts() {
     console.log("Iniciando solicitud de productos...");
-    this.http.get<any>(this.APIURL + "categorias").subscribe(
+    this.http.get<any>(this.APIURL + "productos").subscribe(
       response => {
         console.log("Respuesta recibida:", response);
         return response;
@@ -174,21 +174,59 @@ export class APIService {
     );
   }
 
-  getCategoriesTest(){
-    const categories = [
+  getCategoriesTest() {
+    const categorias = [
       {
-        id: "1",
-        nombre: "Entrantes",
+        id: "664bc8c6812cff3f2c83700c",
+        createdAt: "2024-05-20T22:03:52.285Z",
         descripcion: "Deliciosos entrantes para abrir el apetito",
-        imagen: "",
-        restauranteId: "",
-        indice: "",
         estaActivo: true,
-        __v : 0,
-        createdAt: "",
-        updatedAt: "",
+        imagen: "url_a_la_imagen_de_entrantes.jpg",
+        indice: 1,
+        nombre: "Entrantes",
+        restauranteId: "664bc8c6812cff3f2c83700a",
+        updatedAt: "2024-05-20T22:03:52.285Z",
+        __v: 0
       },
-    ]
+      {
+        id: "664bc8c6812cff3f2c83700d",
+        createdAt: "2024-05-20T22:03:52.285Z",
+        descripcion: "Nuestros platos principales",
+        estaActivo: true,
+        imagen: "url_a_la_imagen_de_platos_principales.jpg",
+        indice: 2,
+        nombre: "Platos Principales",
+        restauranteId: "664bc8c6812cff3f2c83700a",
+        updatedAt: "2024-05-20T22:03:52.285Z",
+        __v: 0
+      },
+      {
+        id: "664bc8c6812cff3f2c83700e",
+        createdAt: "2024-05-20T22:03:52.285Z",
+        descripcion: "Postres deliciosos",
+        estaActivo: true,
+        imagen: "url_a_la_imagen_de_postres.jpg",
+        indice: 3,
+        nombre: "Postres",
+        restauranteId: "664bc8c6812cff3f2c83700a",
+        updatedAt: "2024-05-20T22:03:52.285Z",
+        __v: 0
+      },
+      {
+        id: "664bc8c6812cff3f2c83700f",
+        createdAt: "2024-05-20T22:03:52.285Z",
+        descripcion: "Variedad de bebidas",
+        estaActivo: true,
+        imagen: "url_a_la_imagen_de_bebidas.jpg",
+        indice: 4,
+        nombre: "Bebidas",
+        restauranteId: "664bc8c6812cff3f2c83700a",
+        updatedAt: "2024-05-20T22:03:52.285Z",
+        __v: 0
+      }
+    ];
+
+    return categorias;
   }
 
 }
