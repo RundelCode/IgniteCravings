@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SplashService } from './modules/splash/services/splash.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'igniteCravings';
+
+  constructor(public splashService: SplashService) {}
 }

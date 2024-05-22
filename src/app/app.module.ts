@@ -8,6 +8,7 @@ import { ProductModule } from './modules/product/product.module';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
+import { SplashModule } from './modules/splash/splash.module';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { AppComponent } from './app.component';
     MenuModule,
     CategoryModule,
     ProductModule,
+    SplashModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
