@@ -1,7 +1,7 @@
-<div class="Categorie">
+<div class="Categorie" *ngFor="let categorie of categories">
     <div class="categorieTitle">
         <div class="divider"></div>
-        <p class="title">Titulo</p>
+        <p class="title">{{categorie.nombre}}</p>
         <div class="divider"></div>
     </div>
     <div class="products">

@@ -11,12 +11,14 @@ export class ProductCardComponent implements OnInit {
     image: "../../../../assets/cookies/Nocciola Cookie FOTO.png",
   }
   productList: any;
-  productList1: any;
+  categories: any;
 
   constructor(private apiService: APIService){}
 
   ngOnInit(): void {
     this.productList = this.apiService.getProductsTest();
+    this.categories = this.apiService.getCategoriesTest();
+
   }
 
   test(){
