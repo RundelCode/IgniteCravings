@@ -11,8 +11,6 @@ import { AppComponent } from './app.component';
 import { SplashModule } from './modules/splash/splash.module';
 
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
