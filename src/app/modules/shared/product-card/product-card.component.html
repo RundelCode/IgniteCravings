@@ -1,15 +1,17 @@
-<div class="Categorie" *ngFor="let categorie of categories">
+<div class="Categorie" *ngFor="let categoria of categorias">
     <div class="categorieTitle">
         <div class="divider"></div>
-        <p class="title">{{categorie.nombre}}</p>
+        <p class="title">{{ categoria.nombre }}</p>
         <div class="divider"></div>
     </div>
     <div class="products">
-        <div class="productCard" (click)="test()" *ngFor="let product of productList">
-            <img src="{{producto.image}}" alt="" class="productImage">
-            <div class="productText">
-                <p class="productTitle">{{product.nombre}}</p>
-                <p class="productPrice">${{product.precio}}</p>
+        <div class="productCardContainer" *ngFor="let product of productList" >
+            <div class="productCard" (click)="test()" *ngIf="product.categoriaId.nombre == categoria.nombre">
+                <img src="{{ producto.image }}" alt="{{ product.nombre }}" class="productImage">
+                <div class="productText">
+                    <p class="productTitle">{{ product.nombre }}</p>
+                    <p class="productPrice">${{ product.precio }}</p>
+                </div>
             </div>
         </div>
     </div>

@@ -38,39 +38,42 @@
     flex-wrap: wrap;
 }
 
-.productCard{
+.productCardContainer {
     background-color: #1E1E1E;
     width: 48%;
     height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.productCard {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    margin-bottom: 20px;
 }
 
-.productImage{
+.productImage {
     width: 100%;
-    height: 60%;
+    height: 50%;
+    border-radius: 15px;
     object-fit: cover;
-    border-radius: 15px 15px 0px 0px;
 }
 
-.productText{
-    width: 90%;
-    height: 40%;
+.productText {
+    text-align: center;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-.productTitle{
-    color: #FFFFFF;
-    text-align: center;
-}
-
-.productPrice{
-    color: #FFFFFF;
+.productTitle, .productPrice {
+    margin: 5px 0;
+    color: #fff;
 }
